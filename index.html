@@ -1,13 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RohanOS v1.0.4 - Retro Terminal Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+    <title>Rohan Gautam | Backend Developer Portfolio | RohanOS</title>
+    <meta name="title" content="Rohan Gautam | Backend Developer Portfolio" />
+    <meta name="description" content="RohanOS v1.0.4 - Interactive retro terminal portfolio of Rohan Gautam. Java and Spring Boot backend engineer building high-performance APIs." />
+    <meta name="author" content="Rohan Gautam" />
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cli-portfolio.rohangautam.app/" />
+    <meta property="og:title" content="Rohan Gautam | Backend Developer Portfolio" />
+    <meta property="og:description" content="Interactive retro terminal portfolio of Rohan Gautam, Java & Spring Boot backend engineer." />
+    <meta property="og:image" content="https://cli-portfolio.rohangautam.app/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cli-portfolio.rohangautam.app/" />
+    <meta property="twitter:title" content="Rohan Gautam | Backend Developer Portfolio" />
+    <meta property="twitter:description" content="Interactive retro terminal portfolio of Rohan Gautam, Java & Spring Boot backend engineer." />
+    <meta property="twitter:image" content="https://cli-portfolio.rohangautam.app/og-image.png" />
+
+    <!-- Fix White Flash & Handle SEO Text -->
+    <style>
+        /* 1. Sets the immediate background to pitch black before React loads */
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Safely hides the SEO data from humans without angering Googlebot */
+        .seo-fallback {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+<div id="root">
+    <!-- Wrapped the SEO content in the fallback class -->
+    <div class="seo-fallback">
+        <header>
+            <h1>Rohan Gautam - Software & Backend Developer Portfolio</h1>
+            <p>Java and Spring Boot backend engineer building production-ready architectures, REST APIs, and high-performance systems.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Core Technical Skills</h2>
+                <ul>
+                    <li>Languages: Java, Python, SQL, JavaScript</li>
+                    <li>Frameworks: Spring Boot, Spring Security, Spring Data JPA, Express.js</li>
+                    <li>Databases & Devops: PostgreSQL, MySQL, Redis, Docker, Git, REST API Design</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Featured Backend Projects</h2>
+                <article>
+                    <h3>Geoco E-Commerce Backend</h3>
+                    <p>Production Spring Boot backend for an e-commerce platform. Features JWT authentication, Redis caching, and Razorpay integration.</p>
+                </article>
+                <article>
+                    <h3>TaskSketch</h3>
+                    <p>Full-stack task management application featuring stateless JWT authentication and strict DTO validations.</p>
+                </article>
+                <article>
+                    <h3>Expense Splitter</h3>
+                    <p>Group expense and automated debt-settlement engine built with Java and PostgreSQL.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
